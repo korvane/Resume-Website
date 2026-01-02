@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Projects</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/controller.css">
+    </head>
+    <body>
+        <div id="container--projects">
+            <a href="../index.html">&#x2190 Back</a>
+            <h1 class="title">Low-Level Projects</h1>
+
+            <section id="wrapper--projects">
+                <div>
+                    <h1 class="subtitle">Personal</h1>
+                    <div class="line-break"></div>
+
+
+                    <div class="project-card">
+                        <section id="wrapper--card">
+                            <h2>PCB Power Converter<a href="https://github.com/korvane/PCB-Power-Converter" target="_blank"> (GitHub)</a></h2>
+                            <video width="320" height="240" src="../media/PCBPowerConverter.mp4" controls>
+                            </video>
+                        </section>
+                        <ul>
+                            <li>5V to 3.3V low dropout regulator created in Altium.</li>
+                            <li>Utilized 2 GST-GH connectors to create an external-to-external voltage converter.</li>
+                            <p><strong>Result: </strong>Increased schematic capture, PCB routing, and Git proficiency.</p>
+                            <!-- <p><strong>Usage: </strong>Convert </p> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="subtitle">Academic</h1> 
+                    <div class="line-break"></div>
+
+
+                    <div class="project-card" id="2">
+                        <section id="wrapper--card">
+                            <h2>Instruction Processor<a href="https://github.com/korvane/Instruction-Processor" target="_blank"> (GitHub)</a></h2>
+                        </section>
+                        <ul>
+                            <li>8-bit saturating up binary counter with an editable instruction ROM. (VHDL)</li>
+                            <li>Programmed onto a Digi-Bot, an Intel MAX10 DE-10 Lite-based robot car with two motor-backed wheels and an infrared line sensor.</li>
+                            <li>Uses a Mealy meachine to iterate through a counter and, in parallel, an instruction set created by the programmer. Instructions decoded via decoder.</li>
+                            <li>Utilized sequential logic instead of combinational logic, the former having memory-based logic instead of reactive.</li>
+                            <li>Digi-Bot reads the instruction ROM and displays the corresponding instruction on a maximum of 6 7 segment LEDs</li>
+                            <p><strong>Result: </strong>Mimicked the essense of the function of a Microcontroller (sequential logic) using the Mealy machine. Broadened VHDL, FPGA, and Git proficiency.</p>
+                            <p><strong>Usage: </strong>User can manually alter the instruction ROM so that the Digi-Bot can serially perform movements and sounds as desired.</p>
+                        </ul>
+                    </div>
+
+                    <div class="project-card" >
+                        <section id="wrapper--card">
+                            <h2>4-Cylinder Engine Controller<a href="https://github.com/korvane/Four-Bit-Engine-Controller" target="_blank"> (GitHub)</a></h2>
+                            <img src="../media/Engine.png" width="320" height="240"></img>
+                        </section>
+                        <ul>
+                            <li>Modulo-4 nonsaturating down binary counter. (VHDL)</li>
+                            <li>Programmed onto an Intel MAX10 DE-10 Lite FPGA with sequential logic.</li>
+                            <li>Project is a Moore machine using edge-triggered logic. Simulated in WaveForms.</li>
+                            <li>Utilizes sequential logic instead of combinational logic, the former having memory-based logic instead of reactive.</li>
+                            <p><strong>Result: </strong>Demonstrated the benefit of sequential logic which enables state retention and memory-dependent system behavior. Reinforced VHDL, FPGA, and Git skills.</p>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <section id="wrapper--card">
+                            <h2>Carry Look-Ahead Adder<a href="https://github.com/korvane/Carry-Look-Ahead-Adder" target="_blank"> (GitHub)</a></h2>
+                            <img src="../media/CLA.png" width="320" height="240"></img>
+                        </section>
+                        <ul>
+                            <li>Program which adds 2 4-bit numbers together with O(1) time complexity on an FPGA. (VHDL)</li>
+                            <li>Programmed onto an Intel MAX10 DE-10 Lite FPGA with combinational logic.</li>
+                            <li>Carry calculator used in substitution of the ripple carry style as the latter possesses O(n) time complexity.</li>
+                            <li>The DE-10 Lite was programmed to take 9 switch inputs (a, b, cin) and produce 4 LED outputs.</li>
+                            <p><strong>Result: </strong>Amplified VHDL, FPGA, and Git fundamentals.</p>
+                            <!-- <p><strong>Usage: </strong>Convert </p> -->
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <section id="wrapper--card">
+                            <h2>7-Segment Decoder<a href="https://github.com/korvane/7-Segment-Decoder" target="_blank"> (GitHub)</a></h2>
+                            <img src="../media/7Seg.png" width="320" height="240"></img>
+                        </section>
+                        <ul>
+                            <li>Program which displays the current instruction of the Digi-Bot. Implemented on an FPGA. (VHDL)</li>
+                            <li>Programmed onto a Digi-Bot, an Intel MAX10 DE-10 Lite-based robot car with two motor-backed wheels and an infrared line sensor.</li>
+                            <li>The Digi-Bot was programmed with combinational logic to follow a black line and stop at a collision.</li>
+                            <li>A maximum of 6 7-segment (8 bit) LEDs used for the display and a 3-bit logic vector for the motors and collsion sensor.</li>
+                            <p><strong>Result: </strong>Increased VHDL, block diagram routing, and Git proficiency.</p>
+                            <!-- <p><strong>Usage: </strong>Convert </p> -->
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <script src="../js/model_low.js"></script>
+    </body>
+</html>
