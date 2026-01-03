@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 
 :root{
-    --mainTextColor-light:rgb(0, 0, 0);
-    --secondaryTextColor-light:#000000;
-    --mainLinkColor-light:rgb(173, 157, 157);
+    --mainTextColor-light:rgb(70,70,70);
+    --secondaryTextColor-light:rgb(0, 0, 0);
     --mainBorderColor-light:rgb(100, 100, 100);
-    --mainBgColor-light:rgb(50, 50, 50);
+    --mainBgColor-light:rgb(240, 240, 240);
+    --mainLinkColor-light:rgb(153, 137, 137);
+    --restingLinkColor-light:rgb(125, 125, 125);
 
     --mainTextColor-dark:rgb(200, 200, 200);
     --secondaryTextColor-dark:rgb(255, 255, 255);
-    --mainLinkColor-dark:rgb(173, 157, 157);
     --mainBorderColor-dark:rgb(100, 100, 100);
-    --mainBgColor-dark:rgb(50, 50, 50);
+    --mainBgColor-dark:rgb(40, 40, 40);
+    --mainLinkColor-dark:rgb(173, 165, 165);
     --restingLinkColor-dark:rgb(125, 125, 125);
 
+    --mainTextColor:var(--mainTextColor-dark);
+    --secondaryTextColor:var(--secondaryTextColor-dark);
+    --mainBorderColor:var(--mainBorderColor-dark);
+    --mainBgColor:var(--mainBgColor-dark);
+    --mainLinkColor:var(--mainLinkColor-dark);
+    --restingLinkColor:var(--restingLinkColor-dark);
+}
+[data-theme="dark"]{
     --mainTextColor:var(--mainTextColor-dark);
     --secondaryTextColor:var(--secondaryTextColor-dark);
     --mainLinkColor:var(--mainLinkColor-dark);
@@ -21,8 +30,16 @@
     --mainBgColor:var(--mainBgColor-dark);
     --restingLinkColor:var(--restingLinkColor-dark);
 }
+[data-theme="light"]{
+    --mainTextColor:var(--mainTextColor-light);
+    --secondaryTextColor:var(--secondaryTextColor-light);
+    --mainLinkColor:var(--mainLinkColor-light);
+    --mainBorderColor:var(--mainBorderColor-light);
+    --mainBgColor:var(--mainBgColor-light);
+    --restingLinkColor:var(--restingLinkColor-light);
+}
 
-*{
+*{ /*tahoma, georgia, verdana */
     font-family: "tahoma";
     line-height: 1.5em;
     box-sizing: border-box;
@@ -39,11 +56,11 @@ h1, h2{ /*headers*/
 }
 
 a{ /*hyperlinks*/
-    color:var(--restingLinkColor);
+    color:var(--mainLinkColor);
     transition:300ms;
 }
 a:hover{
-    color:var(--mainLinkColor);
+    color:var(--restingLinkColor);
 }
 li, p{ /*regular text and lists*/
     color: var(--secondaryTextColor);
