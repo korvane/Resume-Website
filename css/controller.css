@@ -57,6 +57,7 @@ h1, h2{ /*headers*/
 
 a{ /*hyperlinks*/
     color:var(--mainLinkColor);
+    text-decoration-color:rgb(50,50,125);
     transition:300ms;
 }
 a:hover{
